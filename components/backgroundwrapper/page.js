@@ -1,6 +1,6 @@
 "use client";
 
-import ParticlesBackground from "../ParticlesBackground/page";
+import ParticlesBackground from "../ParticlesBackground/page.js";
 
 const BackgroundWrapper = ({ children }) => {
   return (
