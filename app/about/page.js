@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import BackgroundWrapper from "@/components/backgroundwrapper/page";
+import BackgroundWrapper from "@/components/backgroundwrapper/page.js";
 
 export default function AboutPage() {
   const stats = [

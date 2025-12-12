@@ -5,7 +5,7 @@ import Process from '@/components/process/page'
 import Service from '@/components/service/page'
 import Strip from '@/components/strip/page'
 import Testimonials from '@/components/testimonial/page'
-import BackgroundWrapper from '@/components/backgroundwrapper/page'
+import BackgroundWrapper from '@/components/backgroundwrapper/page.js'
 import React from 'react'
 
 const Home = () => {

@@ -9,7 +9,7 @@ import {
   ExternalLink, AlertCircle
 } from "lucide-react";
 import QRCode from "react-qr-code";
-import BackgroundWrapper from "@/components/backgroundwrapper/page";
+import BackgroundWrapper from "@/components/backgroundwrapper/page.js";
 
 export default function ContactPage() {
     const [form, setForm] = useState({ name: "", email: "", message: "" });
