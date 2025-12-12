@@ -1,8 +1,8 @@
 "use client";
 
 import { useCallback } from "react";
-import Particles from "react-particles";
-import { loadSlim } from "tsparticles-slim";
+import { Particles } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 
 const ParticlesBackground = () => {
     const particlesInit = useCallback(async (engine) => {
@@ -20,25 +20,25 @@ const ParticlesBackground = () => {
                 },
                 background: {
                     color: {
-                        value: "transparent", // Transparent so black body shows through
+                        value: "transparent",
                     },
                 },
                 particles: {
                     number: {
-                        value: 40, // Reduced number for subtle effect
+                        value: 40,
                         density: {
                             enable: true,
                             value_area: 800,
                         },
                     },
                     color: {
-                        value: "#ffffff", // White particles for black background
+                        value: "#ffffff",
                     },
                     shape: {
                         type: "circle",
                     },
                     opacity: {
-                        value: 0.08, // Very low opacity for subtle effect
+                        value: 0.08,
                         random: true,
                         anim: {
                             enable: true,
@@ -55,12 +55,12 @@ const ParticlesBackground = () => {
                         enable: true,
                         distance: 150,
                         color: "#ffffff",
-                        opacity: 0.05, // Very faint connections
+                        opacity: 0.05,
                         width: 1,
                     },
                     move: {
                         enable: true,
-                        speed: 0.5, // Slow movement for subtle effect
+                        speed: 0.5,
                         direction: "none",
                         random: true,
                         straight: false,
