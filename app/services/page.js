@@ -44,7 +44,7 @@ const services = [
       "Analytics Integration"
     ],
     timeline: "5-10 days",
-    price: "₹15,XXX",
+    price: "₹X,XXX",
     popular: true,
     color: "blue"
   },
@@ -62,7 +62,7 @@ const services = [
       "Calendar Sync"
     ],
     timeline: "10-20 days",
-    price: "₹30,XXX",
+    price: "₹X,XXX",
     popular: true,
     color: "purple"
   },
@@ -80,7 +80,7 @@ const services = [
       "Mobile App Ready"
     ],
     timeline: "15-30 days",
-    price: "₹45,XXX",
+    price: "₹X,XXX",
     popular: false,
     color: "emerald"
   },
@@ -98,7 +98,7 @@ const services = [
       "Automated Emails"
     ],
     timeline: "10-25 days",
-    price: "₹35,XXX",
+    price: "₹XX,XXX",
     popular: false,
     color: "amber"
   },
@@ -116,7 +116,7 @@ const services = [
       "Scalable Architecture"
     ],
     timeline: "15-30 days",
-    price: "₹40,XXX",
+    price: "₹XX,XXX",
     popular: false,
     color: "violet"
   },
@@ -134,7 +134,7 @@ const services = [
       "Analytics Dashboard"
     ],
     timeline: "30-60 days",
-    price: "₹75,XXX",
+    price: "₹XX,XXX",
     popular: true,
     color: "rose"
   },

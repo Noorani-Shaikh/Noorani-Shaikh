@@ -2,36 +2,31 @@
 
 import { useState } from "react";
 
-// Premium SVG icons with better visual appeal
+// Premium SVG icons - SIMPLIFIED with single paths
 const Icons = {
   Search: () => (
     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" className="opacity-0 group-hover:opacity-100 transition-opacity" />
     </svg>
   ),
   PenTool: () => (
     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M12 19l7-7 3 3-7 7-3-3z" className="opacity-0 group-hover:opacity-100 transition-opacity" />
     </svg>
   ),
   Code: () => (
     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M17 7l5 5-5 5M7 7l-5 5 5 5" className="opacity-0 group-hover:opacity-100 transition-opacity" />
     </svg>
   ),
   CheckCircle: () => (
     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M7 13l3 3 7-7" className="opacity-0 group-hover:opacity-100 transition-opacity" />
     </svg>
   ),
   Rocket: () => (
     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M13 10V3L4 14h7v7l9-11h-7z" />
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M17 2l5 5-5 5M7 2L2 7l5 5" className="opacity-0 group-hover:opacity-100 transition-opacity" />
     </svg>
   ),
   Target: () => (
@@ -72,7 +67,6 @@ const Icons = {
   ClockFast: () => (
     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M13 10V3L4 14h7v7l9-11h-7z" />
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3" />
     </svg>
   ),
   BarChart: () => (
@@ -88,7 +82,6 @@ const Icons = {
   Award: () => (
     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
     </svg>
   ),
 };
@@ -480,7 +473,9 @@ export default function Process() {
         <div className="mt-16 lg:mt-24">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-linear-to-r from-emerald-500/10 via-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-white/10 mb-4">
-              <Icons.Award className="w-4 h-4 text-amber-400" />
+              <div className="text-amber-400">
+                <Icons.Award />
+              </div>
               <span className="text-xs font-medium text-gray-300">WHY OUR PROCESS STANDS OUT</span>
             </div>
             <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">

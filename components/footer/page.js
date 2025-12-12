@@ -223,18 +223,18 @@ const Footer = () => {
                     <span className="text-gray-400 text-sm">Pune, India</span>
                   </div>
                   <a
-                    href="mailto:hello@noor.dev"
+                    href="mailto:devwithnoor@gmail.com"
                     className="flex items-start gap-3 text-gray-400 hover:text-white transition-colors duration-300 group"
                   >
                     <Mail className="w-4 h-4 text-blue-400 mt-0.5 shrink-0 group-hover:scale-110 transition-transform" />
-                    <span className="text-sm">hello@noor.dev</span>
+                    <span className="text-sm">devwithnoor@gmail.com</span>
                   </a>
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+917030625288"
                     className="flex items-start gap-3 text-gray-400 hover:text-white transition-colors duration-300 group"
                   >
                     <Phone className="w-4 h-4 text-blue-400 mt-0.5 shrink-0 group-hover:scale-110 transition-transform" />
-                    <span className="text-sm">+91 9876543210</span>
+                    <span className="text-sm">+91 7030625288</span>
                   </a>
                 </div>
               </div>

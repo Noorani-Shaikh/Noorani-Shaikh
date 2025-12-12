@@ -205,7 +205,7 @@ export default function ContactPage() {
                                         </div>
                                         <div>
                                             <p className="text-sm text-slate-400">Email</p>
-                                            <p className="text-white font-medium">contact@noorani.dev</p>
+                                            <p className="text-white font-medium">devwithnoor@gmail.com</p>
                                         </div>
                                     </div>
                                     <button
