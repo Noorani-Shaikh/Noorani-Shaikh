@@ -339,7 +339,7 @@ export default function ServicesPage() {
 
   return (
     <BackgroundWrapper>
-      <section className="relative pt-24 pb-12 md:pb-20 overflow-hidden scroll-mt-20">
+      <section className="relative pt-10 pb-12 md:pb-20 overflow-hidden scroll-mt-20">
         
         {/* Simplified Background */}
         <div className="absolute inset-0 " />

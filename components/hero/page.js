@@ -65,8 +65,8 @@ export default function Hero() {
         <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-linear-to-t from-purple-900/10 to-transparent"></div>
       </div>
 
-      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24">
-        
+      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 lg:py-12">
+        {/* changes made in padding lg:py-24 */}
         {/* Mobile Layout - Always visible by default, hidden on desktop */}
         <div className="lg:hidden">
           <div className="space-y-8">

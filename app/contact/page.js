@@ -130,7 +130,7 @@ export default function ContactPage() {
 
     return (
         <BackgroundWrapper>
-        <section className="max-w-6xl mx-auto px-4 md:px-6 py-16 md:py-24">
+        <section className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-10">
             {/* Animated Background Elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-40 -right-40 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl"></div>

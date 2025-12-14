@@ -95,7 +95,7 @@ const techStack = [
         <div className="absolute bottom-40 right-1/3 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
       </div>
 
-      <section className="relative max-w-7xl mx-auto px-4 md:px-6 py-16 md:py-24">
+      <section className="relative max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-13">
         
         {/* Hero Section - Image FIRST on Mobile */}
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-16 md:mb-24">
