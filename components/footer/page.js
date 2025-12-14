@@ -253,7 +253,7 @@ const Footer = () => {
               © {currentYear} Noorani Shaikh. All rights reserved.
             </p>
             <p className="text-gray-600 text-xs">
-              Built with Next.js • Tailwind CSS • Deployed on Vercel
+              Built with Next.js • Tailwind CSS • MongoDB
             </p>
           </div>
           
