@@ -229,7 +229,7 @@ const colorConfig = {
 const ServiceCard = ({ service }) => {
   const Icon = iconMap[service.icon];
   const colors = colorConfig[service.color];
-  
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -238,7 +238,7 @@ const ServiceCard = ({ service }) => {
       className="group relative"
     >
       <div className={`relative bg-linear-to-br from-gray-900/50 to-gray-950/50 backdrop-blur-sm rounded-xl border ${colors.borderColor} overflow-hidden transition-all duration-300 h-full`}>
-        
+
         {service.popular && (
           <div className="absolute top-3 left-3 z-10 px-2 py-1 rounded-full bg-linear-to-r from-blue-600 to-cyan-600 text-xs font-semibold text-white shadow-lg shadow-blue-500/20">
             <Suspense fallback={<IconFallback />}>
@@ -313,7 +313,7 @@ const ServiceCard = ({ service }) => {
 
 const BenefitCard = ({ benefit }) => {
   const Icon = iconMap[benefit.icon];
-  
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -340,7 +340,7 @@ export default function ServicesPage() {
   return (
     <BackgroundWrapper>
       <section className="relative pt-10 pb-12 md:pb-20 overflow-hidden scroll-mt-20">
-        
+
         {/* Simplified Background */}
         <div className="absolute inset-0 " />
         {/* bg-linear-to-b from-gray-900 via-black to-gray-900 */}
@@ -383,7 +383,7 @@ export default function ServicesPage() {
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#25D366] hover:bg-[#1da851] text-white font-semibold hover:shadow-xl hover:shadow-[#25D366]/25 transition-all duration-300 hover:-translate-y-1"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                  <path d="M20.52 3.49C18.18 1.13 15.19 0 12 0A12 12 0 0 0 0 12c0 2.04.5 3.93 1.36 5.6L0 24l6.51-1.36C8.13 23.5 10 24 12 24c6.63 0 12-5.37 12-12 0-3.19-1.13-6.18-3.48-8.51zM12 21.8c-1.87 0-3.67-.48-5.25-1.36l-.38-.23-3.97 1.04 1.06-3.89-.24-.38C2.6 15.6 2.2 13.85 2.2 12c0-5.4 4.4-9.8 9.8-9.8 2.61 0 5.07 1.02 6.91 2.88 1.84 1.84 2.88 4.3 2.88 6.91 0 5.4-4.4 9.8-9.8 9.8zm5.53-7.45c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.34.23-.63.08-1.17-.58-1.98-1.03-2.8-2.33-.21-.35.21-.33.6-1.1.1-.2.05-.37-.03-.52-.08-.15-.67-1.62-.92-2.21-.24-.59-.49-.51-.67-.52-.17-.01-.37-.01-.57-.01-.2 0-.52.08-.8.38-.28.3-1.07 1.05-1.07 2.56s1.1 2.96 1.25 3.17c.15.2 2.16 3.3 5.25 4.64.73.32 1.3.51 1.74.66.73.24 1.4.21 1.92.13.59-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.13-.3-.2-.6-.35z"/>
+                  <path d="M20.52 3.49C18.18 1.13 15.19 0 12 0A12 12 0 0 0 0 12c0 2.04.5 3.93 1.36 5.6L0 24l6.51-1.36C8.13 23.5 10 24 12 24c6.63 0 12-5.37 12-12 0-3.19-1.13-6.18-3.48-8.51zM12 21.8c-1.87 0-3.67-.48-5.25-1.36l-.38-.23-3.97 1.04 1.06-3.89-.24-.38C2.6 15.6 2.2 13.85 2.2 12c0-5.4 4.4-9.8 9.8-9.8 2.61 0 5.07 1.02 6.91 2.88 1.84 1.84 2.88 4.3 2.88 6.91 0 5.4-4.4 9.8-9.8 9.8zm5.53-7.45c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.34.23-.63.08-1.17-.58-1.98-1.03-2.8-2.33-.21-.35.21-.33.6-1.1.1-.2.05-.37-.03-.52-.08-.15-.67-1.62-.92-2.21-.24-.59-.49-.51-.67-.52-.17-.01-.37-.01-.57-.01-.2 0-.52.08-.8.38-.28.3-1.07 1.05-1.07 2.56s1.1 2.96 1.25 3.17c.15.2 2.16 3.3 5.25 4.64.73.32 1.3.51 1.74.66.73.24 1.4.21 1.92.13.59-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.13-.3-.2-.6-.35z" />
                 </svg>
                 Chat on WhatsApp
               </a>
@@ -422,7 +422,9 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          {/* FAQ Section - Simplified */}
+         // Replace your current FAQ section with this:
+
+          {/* FAQ Section - Fixed */}
           <div className="mb-20">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-white mb-4">Frequently Asked Questions</h2>
@@ -433,31 +435,76 @@ export default function ServicesPage() {
 
             <div className="max-w-3xl mx-auto space-y-4">
               {[
-                "How long does a typical project take?",
-                "What's included in your pricing?",
-                "Do you provide maintenance after launch?",
-                "Can I see examples of your work?"
-              ].map((question, index) => (
+                {
+                  id: 1,
+                  question: "How long does a typical project take?",
+                  answer: "Project timelines vary based on complexity. Simple websites take 5-10 days, while complex applications can take 30-60 days. We provide detailed timelines during our consultation."
+                },
+                {
+                  id: 2,
+                  question: "What's included in your pricing?",
+                  answer: "Our pricing includes design, development, testing, deployment, and basic training. Additional costs may apply for third-party services, premium templates, or ongoing maintenance."
+                },
+                {
+                  id: 3,
+                  question: "Do you provide maintenance after launch?",
+                  answer: "Yes, we offer ongoing maintenance and support packages. We ensure your website stays updated, secure, and performs optimally after launch."
+                },
+                {
+                  id: 4,
+                  question: "Can I see examples of your work?",
+                  answer: "Absolutely! You can view our portfolio and case studies on our website. We also provide references from past clients upon request."
+                }
+              ].map((faq) => (
                 <div
-                  key={index}
-                  className="border border-white/10 rounded-xl overflow-hidden bg-linear-to-br from-gray-900/50 to-gray-950/50"
+                  key={faq.id}
+                  className={`border border-white/10 rounded-xl overflow-hidden bg-linear-to-br from-gray-900/50 to-gray-950/50 transition-all duration-300 ${expandedFAQ === faq.id ? 'ring-1 ring-blue-500/30' : ''
+                    }`}
                 >
                   <button
-                    onClick={() => setExpandedFAQ(expandedFAQ === index ? null : index)}
+                    onClick={() => setExpandedFAQ(expandedFAQ === faq.id ? null : faq.id)}
                     className="w-full p-6 text-left flex items-center justify-between hover:bg-white/5 transition-colors"
                   >
                     <div className="flex items-start gap-4">
                       <Suspense fallback={<IconFallback />}>
                         <FiHelpCircle className="w-5 h-5 text-blue-400 mt-0.5 shrink-0" />
                       </Suspense>
-                      <h3 className="text-lg font-semibold text-white">{question}</h3>
+                      <h3 className="text-lg font-semibold text-white">{faq.question}</h3>
                     </div>
                     <Suspense fallback={<IconFallback />}>
-                      <FiChevronDown className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${
-                        expandedFAQ === index ? 'rotate-180' : ''
-                      }`} />
+                      <FiChevronDown className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${expandedFAQ === faq.id ? 'rotate-180' : ''
+                        }`} />
                     </Suspense>
                   </button>
+
+                  <AnimatePresence>
+                    {expandedFAQ === faq.id && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="px-6 pb-6 pt-0">
+                          <div className="pl-9 border-l border-blue-500/20">
+                            <p className="text-gray-300">{faq.answer}</p>
+                            <div className="mt-4">
+                              <Link
+                                href="/contact"
+                                className="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition-colors"
+                              >
+                                <Suspense fallback={<IconFallback />}>
+                                  <FiMail className="w-4 h-4" />
+                                </Suspense>
+                                Contact for more details
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
               ))}
             </div>
@@ -467,7 +514,7 @@ export default function ServicesPage() {
           <div className="text-center">
             <div className="relative bg-linear-to-br from-gray-900 to-gray-950 rounded-xl border border-white/10 p-8">
               <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-blue-600 via-cyan-500 to-blue-600"></div>
-              
+
               <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-linear-to-r from-blue-500/10 to-cyan-500/10 backdrop-blur-sm border border-blue-500/20 mb-6">
                 <Suspense fallback={<IconFallback />}>
                   <FiStar className="w-5 h-5 text-cyan-400" />
@@ -478,11 +525,11 @@ export default function ServicesPage() {
               <h2 className="text-3xl font-bold text-white mb-4">
                 Let's Build Something Amazing Together
               </h2>
-              
+
               <p className="text-gray-400 max-w-2xl mx-auto mb-8">
                 Take the first step towards transforming your digital presence
               </p>
-              
+
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-linear-to-r from-blue-600 to-cyan-600 text-white font-semibold hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300 hover:-translate-y-1"
